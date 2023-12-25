@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Scheduler</title>
+    <style>
+        button{
+            margin: 10px;
+        }
+        input, select{
+            margin-bottom: 17px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Appointment Scheduler</h1>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label><br />
+            <input type="text" name="name" id="name"><br />
+            <label for="phno">Telephone Number:</label><br />
+            <input type="tel" name="phno" id="phno"><br />
+            <label for="email">Name:</label><br />
+            <input type="email" name="email" id="email" size="40px"><br />
+            <label for="dob">Date of Birth:</label><br />
+            <!-- <input type="date" name="dob" id="dob"><br/>-->
+            <select name="dob">
+                <option value=""></option>
+                <option value="11/01/2000">11/01/2000</option>
+                <option value="11/02/2000">11/02/2000</option>
+                <option value="11/03/2000">11/03/2000</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Appointment Request</legend>
+            <label for="reason">What is the reason for your visit:</label><br />
+            <input list="reason" name="reason" placeholder="select or type your reason">
+            <datalist id="reason">
+                <option value="Fever"></option>
+                <option value="Weakness"></option>
+                <option value="Flue"></option>
+                <option value="Headache"></option>
+            </datalist><br />
+            <label for="painlevel">Current pain level:</label><br />
+            <input type="range" id="painlevel" name="painlevel" /><br />
+            <label for="date">Preferred Date:</label><br />
+            <select name="date">
+                <option value=""></option>
+                <option value="15/11/2023">15/11/2023</option>
+                <option value="16/11/2023">16/11/2023</option>
+                <option value="17/11/2023">17/11/2023</option>
+            </select><br />
+            <label for="time">Preferred Time:</label><br />
+            <input type="time" name="time" id="time" />
+        </fieldset>
+
+        <button type="submit" name="submit" value="submit">Submit</button>
+    </form>
+</body>
+
+</html>

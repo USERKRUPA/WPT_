@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krupa Thumar</title>
+    <style>
+        table, td{
+            padding: 10px 20px;
+        }
+        div{
+            line-height: 24px;
+        }
+        span{
+            color:red;
+        }
+        button[type="submit"]{
+            height: 30px;
+            width: 230px;
+            font-size: 15px;
+            color:blue;
+            background-color: lightblue;
+            border: 1px solid lightblue;
+            border-radius: 3px;
+        }
+        button[type="submit"]:hover{
+            background-color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <!--Introductory part about the form-->
+    <div>
+        <h3 style="color: darkblue;">
+            Feedback Form of Sports Website
+        </h3>
+        Dear customer, this online form is aimed to gether feedback on problems/difficulties you faced while purchasing item from our sports website.
+        It will take only a few minutes to give the feedback. Your feedback is valuable to improve the website.
+        All the * fields are mandatory fields. Click the Submit Form button to submit the feedback. 
+    </div>
+    <div>
+        <table>
+            <form method="post">
+                <tr>
+                    <td><label for="problem_type">Type of Problem</label></td><br/>
+                    <td>
+                    <!--The list attribute of the <input> element, must refer to the id attribute of the <datalist> element.-->
+                          <input list="problem_type" autofocus>
+                          <datalist id="problem_type" name="problem_type">
+                            <option value="Technical">Website is down</option>
+                            <option value="Product not available">
+                            <option value="Missing information about the Product">
+                          </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="uname">User name</label><span>*</span></td>
+                    <td><input type="text" name="uname" id="uname" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label><span>*</span></td>
+                    <td><input type="email" name="email" id="email" required/></td>
+                </tr>
+                <tr>
+                    <td><label>Location</label><span>*</span></td>
+                    <td><input type="text" name="loacation" id="location" required/></td>
+                </tr>
+                <tr>
+                    <td><label for="mobile_no">Phone no</label></td>
+                    <td><input type="tel" name="mobile_no" id="mobile_no"></td>
+                </tr>
+                <tr>
+                    <td><label for="desc">Description of the problem</label><span>*</span></td>
+                    <td><textarea name="desc" id="desc" cols="50" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="notification">Notification of the problem solved</label></td>
+                    <td><input list="notification"><datalist id="notification"><option value="yes"><option value="no"></datalist></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><button type="submit" id="submit" name="submit" value="submit">Submit Form</button></td>
+                </tr>
+            </form>
+        </table>
+    </div>
+</body>
+</html>
