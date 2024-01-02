@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Button</title>
+    <style>
+        
+        #btntoggle{
+            border: 3px solid blue;
+            color: red;
+            background-color: white;
+            margin-top: 300px;
+        }
+        #top{
+            border: 3px solid red;
+            color: red;
+            background-color: white;
+            margin-left:1300px;
+            margin-top:300px;
+            position:absolute;
+            
+        }
+    </style>
+    <script src="./jquery3_7_1.js"></script>
+    <script>
+        $(document).ready(()=>{
+            $('#btntoggle').click(()=>{
+             //   alert("btn clicked");
+                $('div').animate({bottom: '90%'},1000,()=>{$('div').html("Go Bottom")});
+            })
+        })
+    </script>
+    
+</head>
+<body>
+   
+   
+    <button type="button" id="btntoggle" name="btntoggle">Toggle</button>
+
+    <div id = "top">
+        
+        Goto Top
+    </div>
+
+</body>
+</html>

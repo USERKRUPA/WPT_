@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS</title>
+    <style>
+        header{
+            height: 60px;
+            background-color: GREY;
+            padding-top: 2px;
+            font-size: 20px;
+            border: 3px solid black;
+            color: black;
+        }
+        header ul li{
+            flex-direction: column;
+            list-style: none;
+        }
+        header ul li a{
+            padding: 20px;
+            text-decoration: none;
+            color: black;
+        }
+        footer{
+            margin-top:20px;
+            height: 60px; 
+            padding-top: 30px;
+            padding-left: 20px;
+            font-size: 16px;
+            border: 3px solid black;
+            display: flex;
+        }
+        .main{
+            margin-top: 20px;
+            display:flex;
+        }
+        .leftmain{
+            border: 3px solid black;
+            width: 1000px;
+            margin-left: 10px;
+            padding-left:10px;
+        }
+        .rightmain{
+            border: 3px solid black;
+            margin-left:20px;
+            padding-left:10px;
+            width:600px
+        }
+        #btnloadmore{
+            border: 5px solid blue;
+            color: blue;
+            font-weight: bold;
+        }
+        #btnmore{
+            
+             border: 4px solid blue;
+            color: red;
+        }
+        .rightdiv{
+            padding-left: 800px;
+        }
+        h1, h3, h6{
+            color: blue
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+           <ul>
+            <li>
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="blog.html">Blog</a>
+                <a href="login.html">login/Signup</a>
+            </li>
+           </ul> 
+        </div>
+    </header>
+    <section class="main">
+        <section class="leftmain">
+            <h1>Category</h1>
+            <h3>Dummy Text</h3>
+            <p>The Paragraph element. The HTML element represents a paragraph. <a href="para.html">p tag</a> Paragraphs are usually represented in visual media as blocks of text separated from adjacent blocks by blank lines and/or first-line indentation, but HTML paragraphs can be any structural grouping of related content, such as images or form fields</p>
+            <h3>Unkown Printer Took</h3>
+            <p>
+                printer is a device that accepts text and graphic output from a computer and transfers the information to paper, usually to standard-size, 8.5" by 11" sheets of paper. Printers vary in size, speed, sophistication and cost. In general, more expensive printers are used for more frequent printing or high-resolution color printing.
+
+                Personal computer printers can be distinguished as impact or non-impact printers. Early impact printers worked something like an automatic typewriter, with a key striking an inked impression on paper for each printed <a href="char.html">character</a>. The dot matrix printer, an impact printer that strikes the paper a line at a time, was a popular low-cost option.
+            </p>
+            <div style="padding-left: 800px;padding-bottom: 20px;">
+                <button type="button" id="btnmore" name="morebtn">More</button>
+            </div>
+        </section>
+        <section class="rightmain">
+            <h1>Blog</h1>
+            <ol>
+                <li>What is lorem ipsum?</li>
+                <li>What is lorem ipsum?</li>
+                <li>What is lorem ipsum?</li>
+                <li>
+                    What is lorem ipsum?
+                    <ol>
+                        <li>What is lorem ipsum?</li>
+                        <li>What is lorem ipsum?</li>
+                        <li>What is lorem ipsum?</li>
+                        <li>What is lorem ipsum?</li>
+                        <li>What is lorem ipsum?</li>
+                    </ol>
+                </li>
+            </ol>
+            <div style="padding-left: 400px;padding-bottom: 20px;">
+            <button type="button" id="btnloadmore" name="loadbtn">Load More</button>
+            </div>
+        </section>
+    </section>
+    <footer >
+        <div class="leftdiv">
+        <a href="help.html">help@lipsum.com</a> &nbsp;
+    </div>
+    <div class="rightdiv">
+        <a href="policy.html">Privacy Policy: Do not Sell MY Personal Information. Change Content</a>
+    </div>
+    </footer>
+</body>
+</html>
